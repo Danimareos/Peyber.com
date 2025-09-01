@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taller Peyber – Mecánica de confianza</title>
+  <meta name="description" content="Pide cita online en Taller Peyber. Mantenimiento de vehículos, cambio de ruedas, alineado y preparación para ITV. Equipo cercano y profesional."/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div id="top"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <ul class="nav-list">
+      <li><a href="#pideCita"><i class="fa-solid fa-calendar-check"></i> Pide cita</a></li>
+      <li><a href="#servicios"><i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
+      <li><a href="#equipo"><i class="fa-solid fa-user-group"></i> Equipo</a></li>
+    </ul>
+    <a href="#top" class="logo-link">
+      <img src="./img/Logo.jpg" alt="Logo Taller Peyber" class="logo"/>
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <img src="" alt="Interior del taller" />
+    <h1>Bienvenido a Taller Peyber</h1>
+    <p>Expertos en el cuidado de tu vehículo</p>
+  </header>
+
+  <!-- PIDE CITA -->
+  <section id="pideCita" class="section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-calendar-check"></i> Pide cita</h2>
+      <p>Rellena el formulario y te confirmamos por teléfono o email.</p>
+    </div>
+    <div class="cards-cita">
+
+      <article class="card-cita">
+        <h3 style="color: #0e2b89 ">Teléfono</h3>
+        <i class="fa-solid fa-phone" style="font-size: 30px; color: #0e2b89 ""></i>
+      </article>
+
+      <article class="card-cita">
+        <h3 style="color: #0e2b89 ">Email</h3>
+      <i class="fa-solid fa-envelope" style="font-size: 30px; color: #0e2b89 "></i>
+      </article>
+
+    </div>
+   
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Servicios</h2>
+      <p>Trabajamos con rigor, rapidez y piezas de calidad.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-oil-can"></i></div>
+        <h3>Mantenimiento de vehículos</h3>
+        <p>Cambios de aceite, filtros, pastillas y revisiones para que todo vaya fino.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-circle-notch"></i></div>
+        <h3>Cambio de rueda</h3>
+        <p>Neumáticos nuevos, equilibrado y revisión de presiones al momento.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-arrows-left-right"></i></div>
+        <h3>Alinear ruedas</h3>
+        <p>Dirección al punto: más seguridad, menos desgaste y ahorro en combustible.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
+        <h3>Pasar ITV</h3>
+        <p>Pre-ITV completa, correcciones y, si quieres, nos encargamos del trámite.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section id="equipo" class="section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-user-group"></i> Nuestro equipo</h2>
+      <p>Gente maja, con manos de oro y muchas ganas de ayudar.</p>
+    </div>
+
+    <div class="team">
+      <article class="person">
+        <img src="./img/persona1.png" alt="Foto de Laura Martín">
+        <h3>Laura Martín</h3>
+        <span class="role">Jefa de taller</span>
+        <p>Si tu coche habla raro, Laura lo entiende. Le encantan los retos y el café cargado.</p>
+      </article>
+
+      <article class="person">
+        <img src="./img/persona2.png" alt="Foto de Diego Pérez">
+        <h3>Diego Pérez</h3>
+        <span class="role">Mecánico especialista</span>
+        <p>Motor, frenos, suspensión… Diego lo deja como nuevo y sin drama.</p>
+      </article>
+
+      <article class="person">
+        <img src="./img/persona3.png" alt="Foto de Sara López">
+        <h3>Sara López</h3>
+        <span class="role">Neumáticos & Alineado</span>
+        <p>Que el coche vaya rectito es su obsesión. Y lo consigue, vaya si lo consigue.</p>
+      </article>
+
+      <article class="person">
+        <img src="./img/persona4.png" alt="Foto de Javi Romero">
+        <h3>Javi Romero</h3>
+        <span class="role">Recepción & ITV</span>
+        <p>Organiza citas, avisa de todo y si toca ITV, te la pasa sin que te enteres.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Taller Peyber · Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    // año footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // seleccionar imagen principal
+const heroImage = document.querySelector('.hero img');
+
+// array de imágenes
+const images = [
+  './img/taller.webp',
+  './img/Logo grande insta-30.jpg',
+  './img/Logo grande insta-31.jpg',
+  './img/Logo grande insta-28.jpg'
+];
+
+// índice inicial
+let index = 0;
+
+function cambiarImagen() {
+  heroImage.src = images[index]; // cambia a la imagen actual
+  index++; // pasa a la siguiente
+  if (index >= images.length) {
+    index = 0; // vuelve al inicio cuando termine
+  }
+}
+
+// ejecutar cada 3 segundos
+setInterval(cambiarImagen, 3000);
+
+// mostrar la primera imagen al cargar
+cambiarImagen();
+
+
+  </script>
+</body>
+</html>
